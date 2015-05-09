@@ -1,0 +1,22 @@
+
+
+p {
+	margin: 50px;
+	font-family: Georgia;
+	color: #0000FF;
+	font-size: 200%;
+	font-style: italic;
+}
+.naglowek {
+	text-align: center;
+	font-family: Arial;
+}
+
+table {
+	text-align: left;
+}
+
+div{
+	border: 1px dashed #00FF00;
+	width: 60%:;
+}

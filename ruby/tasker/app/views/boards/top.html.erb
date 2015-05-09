@@ -1,0 +1,19 @@
+<h1> Najbardziej zapelniona tablica to: "<%= @board.name %>" !!!</h1>
+  <% @board.tasks.each do |t| %>
+<div>
+<table>
+  <tr>
+    <th> Tytuł </th>
+    <th> Opis </th>
+    <th> Zarchiwizowany </th>
+  </tr>
+  <tr>
+    <td> <%= t.title %> </td>
+    <td> <%= t.description %> </td>
+    <td> <%= t.archived %> </td>
+  </tr>
+ 
+</table>
+</div>
+<br>
+<% end %>

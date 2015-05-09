@@ -1,0 +1,16 @@
+<div id="heh">
+<%= form_for @path do |f| %>
+  <%= f.label :path_name %>
+  <br>
+  <%= f.text_field :path_name %>
+  <br>
+  <%= f.label :description %>
+  <br>
+  <%= f.text_field :description %>
+  <br>
+  <%= f.label :city_id %>
+  <%= f.select :city_id, options_for_select(City.all.collect {|c| [c.city_name, c.id]}) %>
+  <br>
+  <%= f.submit %>
+<% end %>
+</div>

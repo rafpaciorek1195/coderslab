@@ -1,0 +1,12 @@
+<h1> Stwórz nową Tablicę </h1>
+<div class="div">
+<%= form_for @board do |f| %>
+  <%= f.label :name %>:
+  <%= f.text_field :name %><br />
+
+  <%= f.label :user_name %>:
+  <%= f.select :user_id, options_for_select(to_select_for_boards) %>
+  <br>
+  <%= f.submit class: "btn btn-success" %>
+<% end %>
+</div>

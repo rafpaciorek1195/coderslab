@@ -1,0 +1,15 @@
+<h1>Wykaz wszystkich studentów</h1>
+<table>
+<tr>
+<th>Identyfikator Studenta</th>
+<th>Imie Studenta</th>
+<th>Nazwisko Studenta</th>
+</tr>
+<% @students.each do |g| %>
+<tr>
+<td> <%= g.id %> </td>
+<td> <%= g.student_name.capitalize %> </td>
+<td> <%= g.student_surname.capitalize %></td>
+<% end %>
+</tr>
+</table>

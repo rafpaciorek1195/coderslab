@@ -1,0 +1,14 @@
+<%= form_for @group do |f| %>
+
+
+  <%= f.label :group_subject %>:
+  <%= f.text_field :group_subject %><br />
+  <%= f.label :student_id %>:
+  <%= f.select :student_id, options_for_select(Student.all.collect {|s| [s.student_name.capitalize+' '+s.student_surname.capitalize, s.id]}) %><br>
+  <%= f.label :teacher_id %>:
+  <%= f.select :teacher_id, options_for_select(Teacher.all.collect {|s| [s.teacher_name.capitalize+' '+s.teacher_surname.capitalize, s.id]}) %><br>
+
+
+
+  <%= f.submit %>
+<% end %>

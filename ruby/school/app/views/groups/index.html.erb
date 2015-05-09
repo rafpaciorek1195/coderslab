@@ -1,0 +1,17 @@
+<h1>Wykaz wszystkich grup</h1>
+<table>
+<tr>
+<th>Numer Grupy</th>
+<th>Przedmiot</th>
+<th>Utworzona</th>
+<th>Aktualizowana</th>
+</tr>
+<% @groups.each do |g| %>
+<tr>
+<td> <%= g.id %> </td>
+<td> <%= g.group_subject %> </td>
+<td> <%= g.created_at %></td>
+<td> <%= g.updated_at %> </td>
+<% end %>
+</tr>
+</table>

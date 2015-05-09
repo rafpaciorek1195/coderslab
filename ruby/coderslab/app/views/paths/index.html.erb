@@ -1,0 +1,20 @@
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Nazwa</th>
+    <th>Stworzona</th>
+    <th>Aktualizowana</th>
+    <th>Opis</th>
+    <th>ID miasta</th>
+  </tr>
+  <% @paths.each do |r| %>
+    <tr>
+    <td> <%= r.id %> </td>
+    <td> <%= r.path_name %> </td>
+    <td> <%= r.created_at %> </td>
+    <td> <%= r.updated_at  %></td> 
+    <td> <%= r.description %> </td>
+    <td> <%= r.city_id %> </td>
+    </tr>
+  <% end %>
+  </table>

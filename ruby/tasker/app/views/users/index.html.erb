@@ -1,0 +1,16 @@
+<h1>Lista wszystkich użytkowników</h1>
+
+<table>
+  <tr>
+    <th> Identyfikator </th>
+    <th> Imię </th>
+    <th> Nazwisko </th>
+  </tr>
+  <% @users.each do |u| %>
+  <tr>
+    <td> <%= u.id %> </td>
+    <td> <%= u.first_name %> </td>
+    <td> <%= u.last_name %> </td>
+  </tr>
+  <% end %>
+</table>

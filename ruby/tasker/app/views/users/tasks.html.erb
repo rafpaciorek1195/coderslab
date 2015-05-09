@@ -1,0 +1,19 @@
+<h1> Lista zadan zleconych przez <%= @user.first_name + ' ' + @user.last_name %> </h1>
+<table>
+  <tr>
+    <th> Tytuł </th>
+    <th> Opis </th>
+    <th> Tablica z zadaniami </th>
+    <th> Zarchiwizowany </th>
+    <th> Wykonawca </th>
+  </tr>
+  <% @user.tasks.each do |t| %>
+  <tr>
+    <td> <%= t.title %> </td>
+    <td> <%= t.description %> </td>
+    <td> <%= link_to "#{t.board_id}", tasks_board_path(t.board.id) %> </td>
+    <td> <%= t.archived %> </td>
+    <td> <%= t.assigner_id %> </td>
+  </tr>
+  <% end %>
+</table>

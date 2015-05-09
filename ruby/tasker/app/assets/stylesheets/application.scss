@@ -1,0 +1,76 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+body {
+  background-color: #006688;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+}
+
+td {
+  height: 50px;
+  width: 120px;
+}
+
+table, th, td {
+  border: 1px white solid;
+  text-align: center;
+}
+
+th {
+  height: 25px;
+  width: 120px;
+}
+
+table {
+
+}
+
+.div {
+  margin-left:  40%;
+  margin-top: 15%;
+
+}
+
+input[type="text"], textarea {
+  border: 0px solid;
+  background-color : #003344; 
+
+}
+
+a {
+  color: white;
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+<meta charset="UTF-8">
+<style>
+#row {
+	background-color: #FFFFFF;
+	border-color: #FFFFFF;
+}
+
+table, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+
+}
+td {
+	width: 200px;
+	height: 20px;
+}
+
+
+
+</style>
+</head>
+
+<body>
+<table>
+	<tr>
+		<th></th>
+		<th scope="col"> Etap 1</th>
+		<th scope="col"> Etap 2</th>	
+		<th scope="col"> Etap 3</th>	
+		<th scope="col"> Etap 4</th>	
+	</tr>
+	<tr>
+		<th scope="row"> Joan Barreda</th>	
+		<td>2:39:55</td>
+		<td>1:33:02</td>
+		<td>3:03:11</td>
+		<td>4:55:37</td>
+	</tr>
+	<tr>
+		<th>Cyril Despres</th>
+		<td rowspan="2">2:45:09</td>
+		<td colspan="3">nie ukończył</td>
+	</tr>
+	<tr>
+		<th>Marc Coma</th>
+		<td>1:16:01</td>
+		<td>3:59:19</td>
+		<td>2:22:22</td>
+	</tr>
+</table>
+<br>
+<br>
+<table id="tabela">
+	<thead>
+		<tr>
+			<th rowspan="2" id="row"></th>
+			<th colspan="2">Średnia</th>
+			<th rowspan="2">Ilość</th>
+		</tr>
+		<tr>
+			<th>wzrost [m]</th>
+			<th>masa ciałą [kg]</th>
+		</tr>
+	</thead>
+
+	<tbody>
+		<tr>
+			<th>mężczyźni</th>
+			<td>1,81</td>
+			<td>76,2</td>
+			<td>145</td>
+		</tr>
+		<tr>
+			<th>kobiety</th>
+			<td>1,72</td>
+			<td>59,7</td>
+			<td>375</td>
+		</tr>
+	</tbody>
+</table>
+<br>
+<table id = "tabelka">
+<tr>
+  <td> 0 </td>
+  <td rowspan = "2"> 1/4 </td>
+  <td> 2 </td>
+</tr>
+<tr>
+  <td> 3 </td>
+  <td> 5 </td>
+</tr>
+<tr>
+  <td> 6 </td>
+  <td colspan = "2"> 7/8 </td>
+</tr>
+
+
+
+
+			
+
+</body>

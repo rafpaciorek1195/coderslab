@@ -1,0 +1,21 @@
+<h1> Stwórz nowe zadanie </h1>
+<div class="div">
+<%= form_for @task do |f| %>
+  <%= f.label :title %>:
+  <%= f.text_field :title %><br />
+
+  <%= f.label :description %>:
+  <%= f.text_field :description %><br />
+
+  <%= f.label :board %>:
+  <%= f.select :board_id, options_for_select(boards_to_select_for_tasks) %> <br />
+
+  <%= f.label :assignee %>:
+  <%= f.select :assigner_id, options_for_select(users_to_select_for_tasks) %> <br />
+
+  <%= f.label :archived? %>
+  <%= f.check_box :archived, {}, :true, :false %><br />
+
+  <%= f.submit class: "btn btn-success" %>
+<% end %>
+</div>

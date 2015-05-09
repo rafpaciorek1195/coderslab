@@ -1,0 +1,15 @@
+<h1>Wykaz wszystkich nauczycieli</h1>
+<table>
+<tr>
+<th>Identyfikator Nauczyciela</th>
+<th>Imie Nauczyciela</th>
+<th>Nazwisko Nauczyciela</th>
+</tr>
+<% @teachers.each do |g| %>
+<tr>
+<td> <%= g.id %> </td>
+<td> <%= g.teacher_name.capitalize %> </td>
+<td> <%= g.teacher_surname.capitalize %></td>
+<% end %>
+</tr>
+</table>

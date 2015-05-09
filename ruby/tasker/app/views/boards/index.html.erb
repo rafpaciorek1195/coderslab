@@ -1,0 +1,11 @@
+<h1> Wykaz wszystkich tablic </h1>
+<table>
+  <tr>
+    <th> Nazwa Tablicy </th>
+  </tr>
+  <% @boards.each do |b| %>
+  <tr>
+    <td> <%= b.name %> </td>
+  </tr>
+  <% end %>
+</table>
